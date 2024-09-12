@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Create Account</title>
+        <link rel="stylesheet" href="log.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Create Account</h2>
+            <form id="RegistrationForm">
+                <label for="UserId">User ID:</label>
+                <input type="text" id="UserID" name="UserID">
+                <label for="Password">Password:</label>
+                <input type="password" id="Password" name="Password"></label>
+                <p id="PasswordMessage" class="error"></p>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="SecurityQuestion">Security Question</label>
+                <select id="SecurityQuestion" name="SecurityQuestion" required>
+                    <option value="" disabled selected>Select a Security Question</option>
+                    <option value="q1">What is your mother's maiden name?</option>
+                    <option value="q2">What was the make of your first car?</option>
+                    <option value="q3">What was the name of the first school you remember attending?</option>
+                    <option value="q4">What is your favorite movie?</option>
+                </select>
+
+                <label for="SecurityQAnswer">Answer:</label>
+                <input type="text" id="SecurityQAnswer" name="SecurtyQAnswer" required>
+
+                <button type="submit">Create Account</button>
+                
+            </form>
+        </div>
+        <script src="log.js"></script>
+    </body>
+</html>

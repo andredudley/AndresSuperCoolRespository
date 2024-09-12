@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operation Redemption</title>
+    <link rel="stylesheet" href="idek.css">
+    <script src="itdk.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Operation Redemption</h1>
+        <p>Your journey to get closer to our Lord and Savior Jesus Christ starts here.</p>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('about')">About Us</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact Us Here</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content">
+        <section id="home" class="page active">
+            <h2>Welcome to the Redemption Project!</h2>
+            <p>Meditate on a daily scripture, devotional, or testimonies from fellow believers. More coming soon!</p>
+            <p>We look forward to sharing the future of Operation Redemption with you!</p>
+            <nav class="sub-menu">
+                <ul>
+                    <li><a href="#" onclick="showSubPage('dailyScripture')">Daily Scripture</a></li>
+                    <li><a href="#" onclick="showSubPage('devotional')">Devotional</a></li>
+                </ul>
+            </nav>
+            <div id="subContent">
+                <div id="dailyScripture" class="sub-page active">
+                    <h3>Daily Scripture</h3>
+                    <p>Today's scripture: "For I know the plans I have for you," declares the Lord, "plans to prosper you and not to harm you, plans to give you hope and a future." - Jeremiah 29:11</p>
+                </div>
+                <div id="devotional" class="sub-page">
+                    <h3>Devotional</h3>
+                    <p>Today’s devotional: Reflect on God’s unwavering love and how it guides you through life's challenges. Trust in His plan and find peace in His presence.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="page">
+            <h2>About Operation Redemption</h2>
+            <p>I'm Andre, and I created Operation Redemption to connect with people who wish to grow closer to God through Jesus Christ. This website is my way of honoring Him. If it helps even one person, it's a great victory for me.</p>
+            <p>God bless, my friend.</p>
+            <p>- Andre</p>
+        </section>
+
+        <section id="contact" class="page">
+            <h2>Contact Us</h2>
+            <p>We appreciate your support and will do our best to respond to your messages!</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <p id="formresponse"></p>
+        </section>
+    </main>
+</body>
+</html>
